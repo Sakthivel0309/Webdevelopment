@@ -1,0 +1,144 @@
+/* Basic Styling */
+body, h1, h2, p, a, li, ul, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.home {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.home p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    background: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Portfolio Section */
+.portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+/* Contact Section */
+.contact {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.contact form button {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
